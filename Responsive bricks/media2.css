@@ -1,77 +1,94 @@
 * {
     box-sizing: border-box;
+    background-color:  rgb(39, 39, 39)
 }
 
 .bloque {
-    text-align: center;
-}
+    text-align: center;}
 
 .bloque div {
     border: 1px solid lightslategray;
     padding: 20px;
     font-weight: bolder;
-    color: white;
     }
 
 .azul {
-    background-color: lightblue;
+    background-color: lightskyblue;
+    color: honeydew;
 }
 
-.naranjo1, .naranjo2  {
-    background: lightsalmon;
+.amarillo1, .amarillo2 {
+    background-color: yellow;
+    color: black;
 }
 
-
-.verde {
-    background-color: lightseagreen;
+.gris5, .gris6, .gris7, .gris8 {
+    background-color: rgb(160, 158, 158);
+    color: honeydew;
 }
 
-@media (max-width: 399px) {
-   
+/* MEDIA QUERIES*/
+
+@media (max-width: 350px) {
+
+.bloque {
+    width: 100%;
+    } 
 }
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 351px) and (max-width: 650px) {
 
-    div.azul {
-        width: 50%;
-        float: left;
+.amarillo1 {
+    width: 50%;
+    float: left;
     }
 
-    .naranjo1 {
-        width: 100%;
-        float: left;
-        }
-    
-    .naranjo2 {
-        width: 100%;
-        float: left;
-        }
-
-    div.verde {
-        width: 50%;
-        float: left;
-    }
+.amarillo2 {
+    width: 100%;
+    display: inline-block;
 }
 
-@media (min-width: 701px) {
-
-    div.azul {
-        width: 50%;
-        float: left;
-    }
-    
-    .naranjo1 {
-        width: 50%;
-        display: inline-block;     
+.gris5, .gris6 {
+    width: 50%;
+    float: left;
     }
 
-    .naranjo2 {
-        width: 100%;
-        float: left;
-    }
-    
-    .verde {
-        width: 50%;
-        float: left;
-    }
+.gris7 {
+    width: 100%;
+    display: inline-block;
+    }    
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+
+.azul {
+    width: 50%;
+    float: left;
+}
+
+.amarillo1, .amarillo2 {
+    width: 50%;
+    float: left;
+}
+
+.gris5 {
+    width: 60%;
+    float: right;
+}
+
+.gris6 {
+    width: 100%;
+    display: inline-block;
+}
+
+.gris7 {
+    width: 35%;
+    float: left;
+}
+
+.gris8 {
+    width: 100%;
+    display: inline-block;
+}
+
 }

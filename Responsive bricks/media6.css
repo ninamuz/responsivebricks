@@ -1,5 +1,7 @@
+/* clear both: La caja se posiciona por debajo de cualquier caja flotante.*/
 * {
     box-sizing: border-box;
+    background-color:  rgb(39, 39, 39)
 }
 
 .bloque {
@@ -17,20 +19,73 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 428px) {
+@media (max-width: 241px) {
 
-.azul1, .azul2 {
-    width: 100%;
+.azul2 {
+    width: 80%;
+    display: inline-block;
 }
 
-.azul3, .azul4 {
+.azul8 {
+    width: 80%;
+    display: inline-block;
+}
+    }
+
+@media (min-width: 442px) and (max-width: 458px) {
+
+.azul2 {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.azul3, .azul5, .azul7 {
+    width: 20%;
+    margin-left: 80%;
+}
+
+.azul4, .azul6 {
+    width: 100%;
+    display: inline-block;
+}
+
+.azul8, .azul9 {
     width: 50%;
     float: left;
 }
 
-.azul5 {
+.azul10 {
     width: 100%;
     display: inline-block;
+}
+    }
+
+@media (min-width: 459px) {
+
+.azul1 {
+    width: 20%;
+    margin-left: 80%;
+}
+
+.azul2 {
+    width: 20%;
+    float: left;
+}
+
+.azul3 {
+    width: 80%;
+    float: left;
+}
+
+.azul4 {
+    width: 20%;
+    margin-right: 80%;
+    display: inline-block;
+}
+
+.azul5 {
+    width: 75%;
+    margin-left: 25%;
 }
 
 .azul6, .azul7 {
@@ -39,116 +94,19 @@
 }
 
 .azul8 {
-    width: 20%;
-    float: right;
-}
-
-.azul9, .azul10 {
-    width: 100%;
-    display: inline-block;
-}
-    }
-
-@media (min-width: 429px) and (max-width: 693px) {
-
-.azul1 {
-    width: 20%;
-}
-
-.azul2 {
-    width: 20%;
-    margin-left: 80%;
-}
-
-.azul3 {
-    width: 20%;
+    width: 25%;
     float: left;
-}
-
-.azul4 {
-    width: 80%;
-    float: left;
-}
-
-.azul5 {
-    width: 20%;
-    margin-right: 80%;
-    display: inline-block;
-}
-
-.azul6 {
-    width: 50%;
-    float: left;
-}
-
-.azul7 {
-    width: 50%;
-    float: left;
-}
-
-.azul8 {
-    width: 20%;
-    margin-left: 80%;
-    display: inline-block;
 }
 
 .azul9 {
-    width: 20%;
+    width: 25%;
+    float: left;
 }
 
 .azul10 {
-    width: 20%;
-}
-    }
-
-@media (min-width: 694px) {
-
-.azul1 {
-    width: 80%;
-}
-
-.azul2 {
-    width: 80%;
-    margin-left: 20%;
-}
-
-.azul3 {
-    width: 20%;
-    float: left;
-}
-
-.azul4 {
-    width: 20%;
-    float: left;
-}
-
-.azul5 {
-    width: 85%;
-    margin-left: 15%;
+    width: 25%;
+    margin-left: 75%;
     display: inline-block;
-}
-
-.azul6 {
-    width: 80%;
-    margin-left: 20%;
-}
-
-.azul7 {
-    width: 90%;
-    margin-left: 10%;
-}
-
-.azul8 {
-    width: 100%;
-}
-
-.azul9 {
-    width: 20%;
-}
-
-.azul10 {
-    width: 20%;
-    float: right;
 }
 
 

@@ -1,93 +1,134 @@
 * {
     box-sizing: border-box;
+    background-color:  rgb(39, 39, 39)
 }
 
 .bloque {
     text-align: center;}
 
 .bloque div {
-    border: 1px solid lightslategray;
     padding: 20px;
     font-weight: bolder;
+    font-size: 20px;
+    color: rgb(255, 254, 253);
     }
 
-.azul {
-    background-color: lightskyblue;
-    color: honeydew;
+.negro1, .negro2, .negro3 {
+    background-color: rgb(34, 33, 33);
+    border: 1px solid rgb(205, 216, 228);
 }
 
-.amarillo1, .amarillo2 {
-    background-color: yellow;
-    color: black;
+.naranjo4, .naranjo5, .naranjo6 {
+    background-color: rgb(255, 174, 52);
+    border: 1px solid rgb(177, 61, 26);
 }
 
-.gris5, .gris6, .gris7, .gris8 {
-    background-color: rgb(160, 158, 158);
-    color: honeydew;
-}
+.azul7, .azul8, .azul9 {
+    background-color: rgb(2, 100, 212);
+    border: 1px solid rgb(205, 216, 228);
+}   
+
+.verde10 {
+    background-color: rgb(16, 190, 83);
+    border: 1px solid rgb(205, 216, 228);
+    }
 
 /* MEDIA QUERIES*/
 
-@media (max-width: 350px) {
-
-.bloque {
-    width: 100%;
-    } 
+@media (max-width: 200px) {
+/* se mantiene igual*/
 }
 
-@media (min-width: 351px) and (max-width: 650px) {
+@media (min-width:201px) and (max-width: 700px) {
 
-.amarillo1 {
+.negro2, .negro3 {
     width: 50%;
     float: left;
-    }
+}
 
-.amarillo2 {
-    width: 100%;
+.naranjo4 {
+    width: 80%;
     display: inline-block;
 }
 
-.gris5, .gris6 {
-    width: 50%;
-    float: left;
-    }
-
-.gris7 {
-    width: 100%;
-    display: inline-block;
-    }    
-}
-
-@media (min-width: 651px) and (max-width: 1024px) {
-
-.azul {
-    width: 50%;
-    float: left;
-}
-
-.amarillo1, .amarillo2 {
-    width: 50%;
-    float: left;
-}
-
-.gris5 {
-    width: 60%;
+.naranjo5 {
+    width: 90%;
     float: right;
 }
 
-.gris6 {
-    width: 100%;
-    display: inline-block;
-}
-
-.gris7 {
-    width: 35%;
+.naranjo6 {
+    width: 90%;
     float: left;
 }
 
-.gris8 {
+.azul7 {
+    width: 50%;
+    float: left;
+}
+
+.azul8 {
     width: 100%;
     display: inline-block;
+}
+
+.azul9 {
+    width: 50%;
+    display: inline-block;
+    margin-left: 50%;
+    
+}
+
+.verde10 {
+    width: 25%;
+    display: inline-block;
+}
+}
+
+@media (min-width: 701px) {
+
+.negro1 {
+    width: 20%;
+    float: left;
+}
+
+.negro2 {
+    width: 20%;
+    float: left;
+}
+
+.negro3 {
+    width: 60%;
+    float: left;
+}
+
+.naranjo4 {
+    width: 100%;
+    display: inline-block;
+}
+
+.naranjo5 {
+    width: 60%;
+    margin-left: 40%;
+}
+
+.naranjo6 {
+    width: 60%;
+    float: left;
+}
+
+.azul7, .azul8 {
+    width: 50%;
+    float: left;
+}
+
+.azul9 {
+    width: 100%;
+    display: inline-block;
+}
+
+.verde10 {
+    width: 50%;
+    float: right;
 }
 
 }
